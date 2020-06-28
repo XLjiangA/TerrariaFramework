@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terraria", "Terraria.csproj", "{CB796186-AA55-46EA-BF07-7F394D4C8553}"
+	ProjectSection(ProjectDependencies) = postProject
+		{62C5DE7D-C8CF-4123-9A06-40FABDB21BC4} = {62C5DE7D-C8CF-4123-9A06-40FABDB21BC4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameHack", "..\GameHack\GameHack.csproj", "{62C5DE7D-C8CF-4123-9A06-40FABDB21BC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuraraDemo", "..\TuraraDemo\TuraraDemo.csproj", "{C2E64A3A-8A67-4D90-9E39-B77FFCBCA50E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB796186-AA55-46EA-BF07-7F394D4C8553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB796186-AA55-46EA-BF07-7F394D4C8553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB796186-AA55-46EA-BF07-7F394D4C8553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB796186-AA55-46EA-BF07-7F394D4C8553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C5DE7D-C8CF-4123-9A06-40FABDB21BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C5DE7D-C8CF-4123-9A06-40FABDB21BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C5DE7D-C8CF-4123-9A06-40FABDB21BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C5DE7D-C8CF-4123-9A06-40FABDB21BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E64A3A-8A67-4D90-9E39-B77FFCBCA50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E64A3A-8A67-4D90-9E39-B77FFCBCA50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E64A3A-8A67-4D90-9E39-B77FFCBCA50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E64A3A-8A67-4D90-9E39-B77FFCBCA50E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F2D1C67-8C29-48D6-8272-BF4CD0C6881A}
+	EndGlobalSection
+EndGlobal
