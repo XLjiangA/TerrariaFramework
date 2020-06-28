@@ -1,0 +1,7 @@
+E:\Steam\steamapps\common\Terraria\GameHack.dll
+E:\Steam\steamapps\common\Terraria\GameHack.pdb
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\GameHack\obj\Debug\GameHack.csprojAssemblyReference.cache
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\GameHack\obj\Debug\GameHack.csproj.CoreCompileInputs.cache
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\GameHack\obj\Debug\GameHack.csproj.CopyComplete
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\GameHack\obj\Debug\GameHack.dll
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\GameHack\obj\Debug\GameHack.pdb

@@ -1,0 +1,8 @@
+E:\Steam\steamapps\common\Terraria\TTerraria.exe.config
+E:\Steam\steamapps\common\Terraria\TTerraria.exe
+E:\Steam\steamapps\common\Terraria\TTerraria.pdb
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\Terraria\obj\Debug\Terraria.csprojAssemblyReference.cache
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\Terraria\obj\Debug\Terraria.csproj.CoreCompileInputs.cache
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\Terraria\obj\Debug\Terraria.csproj.CopyComplete
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\Terraria\obj\Debug\TTerraria.exe
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\Terraria\obj\Debug\TTerraria.pdb
