@@ -1,0 +1,6 @@
+E:\Steam\steamapps\common\Terraria\GameMods\TuraraDemo.dll
+E:\Steam\steamapps\common\Terraria\GameMods\TuraraDemo.pdb
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\TuraraDemo\obj\Debug\TuraraDemo.csprojAssemblyReference.cache
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\TuraraDemo\obj\Debug\TuraraDemo.csproj.CoreCompileInputs.cache
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\TuraraDemo\obj\Debug\TuraraDemo.dll
+C:\Users\starr\Desktop\CSharp\TerrariaFramework\TuraraDemo\obj\Debug\TuraraDemo.pdb

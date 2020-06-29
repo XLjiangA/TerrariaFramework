@@ -81,6 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheatUI.cs" />
+    <Compile Include="InputUtils.cs" />
+    <Compile Include="MapClone.cs" />
+    <Compile Include="mapEditUtils.cs" />
     <Compile Include="MyTestCheat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
