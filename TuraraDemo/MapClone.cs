@@ -175,7 +175,10 @@ public class MapTemp
         {
             for (int j = 0; j < _y; j++)
             {
-                Main.tile[i + (int)pos.X-_x/2, j + (int)pos.Y-_y] = (Tile)TempTiles[i, j].Clone(); 
+                if (TempTiles[i, j].collisionType != 0&& Main.tile[i + (int)pos.X - _x / 2, j + (int)pos.Y - _y].collisionType == 0)
+                {
+                    Main.tile[i + (int)pos.X - _x / 2, j + (int)pos.Y - _y] = (Tile)TempTiles[i, j].Clone();
+                }
             }
         }
     }
