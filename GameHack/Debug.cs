@@ -21,6 +21,12 @@ namespace GameHack
             return Encoding.Default.GetString(bytes);
 
         }
+        public static void logError(string text, ConsoleColor co = ConsoleColor.White)
+        {
+            Console.ForegroundColor = co;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
         public static void Log(string text, ConsoleColor co = ConsoleColor.White, string pex = "")
         {
             Console.ForegroundColor = ConsoleColor.Yellow;

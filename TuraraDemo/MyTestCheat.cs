@@ -2,11 +2,12 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using ReLogic.Graphics;
+using System;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.UI;
 
-[HInfo("Turara", "GameDemo", "0.0.2.2")]
+[HInfo("Turara", "GameDemo", "0.0.2.3")]
 public class MyTestCheat : GameH
 {
     private UserInterface InGameUI_map = new UserInterface();

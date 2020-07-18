@@ -144,62 +144,62 @@ public class CheatUI : UIState
     bool IsKeyUp = false;
     private void Text_Update(UIElement listeningElement)
     {
-        if (Main.keyState.IsKeyDown(Keys.NumPad1) && !IsKeyUp)
+        if ((Main.keyState.IsKeyDown(Keys.NumPad1) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D1) && !IsKeyUp))
         {
             _TextBox.Write("1");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad2) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad2) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D2) && !IsKeyUp))
         {
             _TextBox.Write("2");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad3) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad3) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D3) && !IsKeyUp))
         {
             _TextBox.Write("3");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad4) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad4) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D4) && !IsKeyUp))
         {
             _TextBox.Write("4");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad5) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad5) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D5) && !IsKeyUp))
         {
             _TextBox.Write("5");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad6) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad6) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D6) && !IsKeyUp))
         {
             _TextBox.Write("6");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad7) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad7) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D7) && !IsKeyUp))
         {
             _TextBox.Write("7");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad8) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad8) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D8) && !IsKeyUp))
         {
             _TextBox.Write("8");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad9) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad9) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D9) && !IsKeyUp))
         {
             _TextBox.Write("9");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.NumPad0) && !IsKeyUp)
+        else if ((Main.keyState.IsKeyDown(Keys.NumPad0) && !IsKeyUp) || (Main.keyState.IsKeyDown(Keys.D0) && !IsKeyUp))
         {
             _TextBox.Write("0");
             IsKeyUp = true;
         }
-        else if (Main.keyState.IsKeyDown(Keys.Back) && !IsKeyUp)
+        else if (Main.keyState.IsKeyDown(Keys.Back)  && !IsKeyUp)
         {
             _TextBox.Backspace();
             IsKeyUp = true;
         }
-        else if (Main.keyState.GetPressedKeys().Where(p => { return (p >= (Keys)96 && p <= (Keys)105) || p == Keys.Back; }).Count() == 0)
+        else if (Main.keyState.GetPressedKeys().Where(p => { return (p >= (Keys)96 && p <= (Keys)105)||(p>=(Keys)48&&p<=(Keys)57) || p == Keys.Back; }).Count() == 0)
         {
             IsKeyUp = false;
         }

@@ -102,7 +102,14 @@ static class HackRun
         Console.ResetColor();
         args = new string[] { GF.IsFormSteam.ToString() };
         AsmloadDic["Terraria"].EntryPoint.Invoke(null, new object[] { args });
-        GF.ListExit();
+        try
+        {
+            GF.ListExit();
+        }
+        catch (Exception e)
+        {
+            Debug.logError(e.StackTrace + "\r\n" + e.Message, ConsoleColor.Red);
+        }
         gameRun = false;
     }
     public static bool JustFirstLoad = false;
@@ -115,8 +122,9 @@ static class HackRun
                 GF.ListOnGUI(gameTime);
             }
         }
-        catch
+        catch(Exception e)
         {
+            Debug.logError(e.StackTrace + "\r\n" + e.Message, ConsoleColor.Red);
         }
 
     }
@@ -138,8 +146,9 @@ static class HackRun
                 GF.ListUpdate();
             }
         }
-        catch
+        catch (Exception e)
         {
+            Debug.logError(e.StackTrace + "\r\n" + e.Message, ConsoleColor.Red);
         }
 
     }
