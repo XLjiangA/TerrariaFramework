@@ -1,12 +1,13 @@
 ﻿using GameHack;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
 using ReLogic.Graphics;
 using System;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 using Terraria;
 using Terraria.GameContent;
+using Terraria.Graphics.Light;
 using Terraria.UI;
-
 [HInfo("Turara", "GameDemo", "0.0.2.3")]
 public class MyTestCheat : GameH
 {
@@ -25,6 +26,7 @@ public class MyTestCheat : GameH
         Mc = new MapClone();
         Main.InGameUIDic["A"] = InGameUI_main;
         Cu = new CheatUI();
+        LightingEngineHook.Init();
 
     }
     public override void Update()
@@ -130,4 +132,34 @@ public class MyTestCheat : GameH
     {
     }
 }
+public static class LightingEngineHook
+{
+    private static FieldInfo  _workingLightMap = null;
+    public static void Init()
+    {
+        _workingLightMap = typeof(LightingEngine).GetField("_workingLightMap", BindingFlags.NonPublic | BindingFlags.Instance);
+        var UpdateLightDecay = typeof(LightingEngine).GetMethod("UpdateLightDecay", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+        var target = typeof(LightingEngineHook).GetMethod("HookTarget", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
+        HookMethod(UpdateLightDecay, target);
+    }
+    private static void HookTarget(this LightingEngine LgEngine)
+    {
+        LightMap workingLightMap = _workingLightMap.GetValue(LgEngine) as LightMap;
+        workingLightMap.LightDecayThroughAir = 1f;
+        workingLightMap.LightDecayThroughSolid = 1f;
+        workingLightMap.LightDecayThroughHoney = Vector3.One;
+    }
+    private static void HookMethod(MethodInfo sourceMethod, MethodInfo destinationMethod)
+    {
+        RuntimeHelpers.PrepareMethod(sourceMethod.MethodHandle);
+        RuntimeHelpers.PrepareMethod(destinationMethod.MethodHandle);
+        unsafe
+        {
+            int* inj = (int*)destinationMethod.MethodHandle.Value.ToPointer() + 2;
+            int* tar = (int*)sourceMethod.MethodHandle.Value.ToPointer() + 2;
+            *tar = *inj;
+        }
+    }
+} 
+
 
